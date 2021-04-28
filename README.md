@@ -22,3 +22,22 @@ dog.info();
 
 ```
 ▲ 子クラスBhogeのinfoメソッドが呼び出される（オーバーライド）
+
+## コーディングトレーニング
+「ハウスM21」のレイアウト構造をレスポンシブで写経する。
+
+#### サイト構造
+- header > logo - nav/toggle
+- main > section（p-index__mainVisual） - section（p-index__event） - section（p-index__news） - section（p-index__brand） - section（p-index__voice） - section（footer__own__wrap） - section（p-index__exhibition） - section（p-index__works）
+- footer
+- aside(※smartphoneのみ)
+
+#### ブレイクポイント
+- desktop（1200px ↑）
+- tablet（1199px ↓）
+- smartDevice（1023px ↓）
+
+## チャレンジ
+- ハンバーガーメニューに画像やSVGを使わずcssで描画する
+- ヘッダーを上部固定にする
+- スマホビューの時だけasideを表示し、ページ下部に固定する
