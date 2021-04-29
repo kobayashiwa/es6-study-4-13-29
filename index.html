@@ -1,0 +1,289 @@
+<!doctype html>
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>es6-study-4-12-29</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=""/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+    <body>
+
+        <div class="main_visual_wrap">
+            <h1><img src="img/copy.svg"></h1>
+            <header class="top-header">
+                <div class="logo-symbol"><img src="img/logo-symbol.svg"></div>
+                <div class="logo-typo"><img src="img/logo-typo.svg"></div>
+                <div class="in">
+                    <nav>
+                        <ul class="flex">
+                            <li><a href="#">サービス紹介</a></li>
+                            <li><a href="#">メンバーシップ</a></li>
+                            <li><a href="#">トレーナー紹介</a></li>
+                            <li><a href="#">施設紹介</a></li>
+                            <li><a href="#">インタビュー</a></li>
+                            <li><a href="#">FORHについて</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">リクルート</a></li>
+                        </ul>
+                    </nav>
+                    <div class="contact">
+                        <a href="#">体験はこちらから</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="toggle-menu">
+            <div class="logo-symbol"><img src="img/logo-symbol.svg"></div>
+            <nav>
+                <ul class="flex">
+                    <li><a href="#">サービス紹介</a></li>
+                    <li><a href="#">メンバーシップ</a></li>
+                    <li><a href="#">トレーナー紹介</a></li>
+                    <li><a href="#">施設紹介</a></li>
+                    <li><a href="#">インタビュー</a></li>
+                    <li><a href="#">FORHについて</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">リクルート</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <section class="top-concept">top-concept</section>
+            <section class="sec-full-width service">service</section>
+            <section class="sec-full-width membership">membership</section>
+            <section class="area-sec-half-width">area-sec-half-width</section>
+            <section class="area-sec-half-width">area-sec-half-width</section>
+            <section class="top_latest_entries">top_latest_entries</section>
+            <section class="top_media">top_media</section>
+            <section class="sec-cmn-03 full sec-campaign">sec-campaign</section>
+            <section class="sec-full-width sec-trial bottom">sec-trial</section>
+        </main>
+
+        <footer>footer</footer>
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>
+        // スクロール時に実行する
+        $(window).scroll(function(){
+            // main_visual_wrapの高さを取得する
+            let mainVisualHeight = $(".main_visual_wrap").height();
+            let topHeaderHeight = $(".top-header").height();
+            // スクロール量の取得
+            let scroll = $(this).scrollTop();
+            // スクロール量がmain_visual_wrapの高さより大きければclassを付与する
+            if ( scroll > mainVisualHeight - topHeaderHeight){
+                $(".top-header").addClass("bisible");
+            }
+            // スクロール量がtop-headerの高さより小さければ特定のclassを消す
+            else {
+                $(".top-header").removeClass("bisible");
+            }
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $('.toggle').click(function() {
+                $(this).toggleClass('active');
+                
+                if ($(this).hasClass('active')) {
+                    $('.toggle-menu').addClass('active');
+                } else {
+                    $('.toggle-menu').removeClass('active');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        // Animal
+        class Animal {
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+            }
+            greet() {
+                console.log("こんにちは");
+            }
+            info() {
+                this.greet();
+                console.log(`名前は${this.name}です。`);
+                console.log(`年齢は${this.age}歳です`);
+            }
+        }
+        class Dog extends Animal {
+            getHumanAge() {
+                return this.age *7;
+            }
+        }
+        const dog = new Dog("レオ", 4);
+        dog.info();
+
+        const humanAge = dog.getHumanAge();
+        console.log(`人間年齢で${humanAge}歳です`);
+        console.log(`---------`);
+
+
+        // Konica
+        class Konica {
+            constructor(company, year){
+                this.company = company;
+                this.year = year;
+            }
+            news() {
+                console.log("ニュース");
+            }
+            info() {
+                this.news();
+                console.log(`${this.company}の${this.year}年無料ウェビナー`);
+            }
+        }
+        class Event extends Konica {
+            getNextYear() {
+                return this.year +1;
+            }
+        }
+        const event = new Event("コニカミノルタマーケティングサービス株式会社", 2021);
+        event.info();   
+        
+        const nextYear = event.getNextYear();
+        console.log(`次回の開催は${nextYear}年となります`)
+        console.log(`---------`);
+
+
+        // Lion
+        class Lion {
+            constructor(post, client, month) {
+                this.post = post;
+                this.client = client;
+                this.month = month;
+            }
+            time() {
+                console.log("2021年5月11日（火）15:00〜16:20");
+            }
+            info() {
+                this.time();
+                console.log(`${this.post}${this.client}様に学ぶリテールニューノーマルの取り組みとは？`);
+            }
+        }
+        class Seminar extends Lion {
+            getNextSeminar() {
+                return this.month +2;
+            }
+        }
+        const seminar = new Seminar("ストアDX最前線！", "ライオン", 5);
+        seminar.info();
+
+        const nextSeminar = seminar.getNextSeminar();
+        console.log(`セミナーは隔月で開催中。次回は${nextSeminar}月となります`);
+        console.log(`---------`);
+
+
+        // Meet
+        class Meet {
+            constructor(client01, name01, client02, name02, client03, name03, people) {
+                this.client01 = client01;
+                this.name01 = name01;
+                this.client02 = client02;
+                this.name02 = name02;
+                this.client03 = client03;
+                this.name03 = name03;
+                this.people = people;
+            }
+            organizer() {
+                console.log("主催：コニカミノルタマーケティングサービス株式会社");
+            }
+            info() {
+                this.organizer();
+                console.log(`講師`);
+                console.log(`${this.client01} : ${this.name01}`);
+                console.log(`${this.client02} : ${this.name02}`);
+                console.log(`${this.client03} : ${this.name03}`);
+            }
+        }
+        class Online extends Meet {
+            getOtherTeacher() {
+                return this.people *4;
+            }
+        }
+        const online = new Online("LION", "田村 雄大", "DNP", "平内 庸介", "KONICA MINOLTA", "清水 隆史", 3);
+        online.info();
+
+        const otherTeacher = online.getOtherTeacher();
+        console.log(`講師の予定枠は${otherTeacher}人を予定しています。`);
+        console.log(`---------`);
+
+
+        // Seminar
+        class Shopper {
+            constructor(who, action, day) {
+                this.who = who;
+                this.action = action;
+                this.day = day;
+            }
+            overview() {
+                console.log("セミナー概要");
+            }
+            info() {
+                this.overview();
+                console.log(`${this.who}の${this.action}に関しては、オンラインではデータ分析と活用が進んでいる一方、リアル店舗では競合商品との比較検討等、購買前の${this.who}行動データの取得や分析は手付かずになっており、DX化の遅れが課題となっているのが現状です。`);
+            }
+        }
+        class Dx extends Shopper {
+            getRelease() {
+                return this.day -1;
+            }
+        }
+        const dx = new Dx("ショッパー", "購買行動", 2);
+        dx.info();
+
+        const release = dx.getRelease();
+        console.log(`※この情報は${release}日前のデータを元にしています。`);
+        console.log(`---------`);
+
+
+        // StoreDX
+        class StoreDX {
+            constructor(real, digital, experience, time) {
+                this.real = real;
+                this.digital = digital;
+                this.experience = experience;
+                this.time = time;
+            }
+            overview() {
+                console.log(`そんな中、今回は${this.real}と${this.digital}を統合した新たな${this.experience}や買物体験を提供し、商品やサービスの価値を最大限に高める顧客体験（CX）の実現を目指す「ストアDX」を推進されている大日本印刷株式会社様との共催で、ライオン株式会社様のリテールニューノーマルのお取組みをご紹介。`);
+            }
+            info() {
+                this.overview();
+            }
+        }
+        class Cx extends StoreDX {
+            getAnnouncement() {
+                return this.time -4;
+            }
+        }
+
+        const cx = new Cx("リアル", "デジタル", "店頭体験", 12);
+        cx.info();
+
+        const announcement = cx.getAnnouncement();
+        console.log(`※このプレスは4時間前の${announcement}時に発表されました。`);
+        console.log(`---------`);
+    </script>
+
+</html>
+
