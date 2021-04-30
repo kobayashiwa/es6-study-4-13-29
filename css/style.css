@@ -87,7 +87,6 @@ ul, li {
 }
 nav {
 	height: 100%;
-	padding-right: 200px;
 	transition: all .5s;
 }
 nav ul {
@@ -99,7 +98,7 @@ nav ul li a {
 	display: inline-block;
 	font-size: 14px;
 	font-weight: 600;
-	line-height: 80px;
+	line-height: 92px;
 	padding: 0 10px;
 	height: 100%;
 	transition: all .5s;
