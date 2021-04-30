@@ -183,13 +183,7 @@ nav ul li a:hover {
 		height: 100%;
 	}
 }
-@media screen and (max-width: 989px) {
-	.top-header {
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: 64px;
-	}
+@media screen and (max-width: 1023px) {
 	.top-header::before{
 		background-image: none;
 	}
