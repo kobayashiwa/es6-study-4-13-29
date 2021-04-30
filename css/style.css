@@ -329,6 +329,11 @@ main {
 	height: 20vw;
 	background: hsl(214, 97%, 23%, 0.5);
 }
+.footer__own__wrap {
+	width: 100%;
+	height: 40vw;
+	background: hsl(214, 97%, 23%, 0.6);
+}
 
 /** footer **/
 footer {
