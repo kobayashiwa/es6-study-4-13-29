@@ -77,14 +77,6 @@ ul, li {
 
 
 
-.logo-typo {
-	position: absolute;
-	width: 80px;
-	height: 30px;
-	top: 25px;
-	left: 100px;
-	transition: all .2s;
-}
 nav {
 	height: 100%;
 	transition: all .5s;
@@ -93,6 +85,11 @@ nav ul {
 	justify-content: flex-end;
 	align-items: center;
 	height: 100%;
+}
+nav ul li.estate {
+	border-left: 1px solid #ccc;
+	margin: 0 10px;
+	padding: 0 0 0 10px;
 }
 nav ul li a {
 	display: inline-block;
