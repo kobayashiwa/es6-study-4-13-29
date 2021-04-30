@@ -56,21 +56,22 @@ ul, li {
 	background: #222;
 	transition: all .2s;
 }
-
-
-
-
-
 .in {
 	height: 100%;
 	position: relative;
 }
-.logo-symbol {
+
+
+
+
+
+.head-logo {
 	position: absolute;
-	width: 80px;
-	height: 80px;
-	top: 0px;
-	left: 0px;
+	width: 125px;
+	height: 44px;
+	top: 24px;
+	left: 40px;
+	background: #333;
 	transition: all .2s;
 }
 .logo-typo {
