@@ -309,6 +309,11 @@ main {
 	height: 120vw;
 	background: hsl(214, 97%, 23%, 0.1);
 }
+.p-index__event {
+	width: 100%;
+	height: 130vw;
+	background: hsl(214, 97%, 23%, 0.2);
+}
 
 /** footer **/
 footer {
