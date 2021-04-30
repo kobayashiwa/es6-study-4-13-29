@@ -60,20 +60,23 @@ ul, li {
 	height: 100%;
 	position: relative;
 }
-
-
-
-
-
 .head-logo {
 	position: absolute;
 	width: 125px;
 	height: 44px;
 	top: 24px;
 	left: 40px;
-	background: #333;
 	transition: all .2s;
 }
+.head-logo img {
+	width: 100%;
+}
+
+
+
+
+
+
 .logo-typo {
 	position: absolute;
 	width: 80px;
@@ -81,9 +84,6 @@ ul, li {
 	top: 25px;
 	left: 100px;
 	transition: all .2s;
-}
-.logo-symbol img, .logo-typo img {
-	width: 100%;
 }
 nav {
 	height: 100%;
