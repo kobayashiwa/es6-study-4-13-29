@@ -334,6 +334,11 @@ main {
 	height: 40vw;
 	background: hsl(214, 97%, 23%, 0.6);
 }
+.p-index__exhibition {
+	width: 100%;
+	height: 20vw;
+	background: hsl(214, 97%, 23%, 0.7);
+}
 
 /** footer **/
 footer {
