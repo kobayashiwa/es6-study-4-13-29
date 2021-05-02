@@ -80,17 +80,18 @@ nav ul {
 	align-items: center;
 	height: 100%;
 }
-
-
-
-
-
-
-
-
 nav ul li {
 	height: 100%;
 }
+
+
+
+
+
+
+
+
+
 nav ul li.estate {
 	border-left: 1px solid #ccc;
 	margin: 0 10px;
