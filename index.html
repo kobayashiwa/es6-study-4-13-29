@@ -64,24 +64,6 @@
     </body>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script>
-        // スクロール時に実行する
-        $(window).scroll(function(){
-            // main_visual_wrapの高さを取得する
-            let mainVisualHeight = $(".main_visual_wrap").height();
-            let topHeaderHeight = $(".top-header").height();
-            // スクロール量の取得
-            let scroll = $(this).scrollTop();
-            // スクロール量がmain_visual_wrapの高さより大きければclassを付与する
-            if ( scroll > mainVisualHeight - topHeaderHeight){
-                $(".top-header").addClass("bisible");
-            }
-            // スクロール量がtop-headerの高さより小さければ特定のclassを消す
-            else {
-                $(".top-header").removeClass("bisible");
-            }
-        });
-    </script>
 
     <script>
         $(function() {
@@ -95,17 +77,6 @@
                 }
             });
         });
-    </script>
-
-    <script>
-        // Animal
-        class Animal {
-            constructor(name, age){
-                this.name = name;
-            }
-        }
-
-
     </script>
 
 </html>
