@@ -100,6 +100,9 @@ nav ul li a {
 	height: 100%;
 	transition: all .5s;
 }
+nav ul li.navBox a {
+	line-height: 1;
+}
 nav ul li a:hover {
 	color: #212121;
 	background: #edeff1;
@@ -107,26 +110,7 @@ nav ul li a:hover {
 .toggle, .toggle-menu {
 	display: none;
 }
-.contact {
-	position: absolute;
-	top:14px;
-	right: 20px;
-	transition: all .2s;
-}
-.contact a {
-	display: block;
-	padding: 14px 24px;
-	background: #fff;
-	border-radius: 4px;
-	font-size: 14px;
-	font-weight: 600;
-	color: #C68AA3;
-	transition: all .2s;
-}
-.contact a:hover {
-	background: #413D3C;
-	color: #fff;
-}
+
 @media screen and (max-width: 1199px) {
 	.top-header {
 		height: 70px;
@@ -193,9 +177,6 @@ nav ul li a:hover {
 		display: none;
 	}
 	nav {
-		display: none;
-	}
-	.contact {
 		display: none;
 	}
 	.toggle, .toggle span {
