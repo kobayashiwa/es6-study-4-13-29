@@ -75,18 +75,19 @@ nav {
 	height: 100%;
 	transition: all .5s;
 }
-
-
-
-
-
-
-
 nav ul {
 	justify-content: flex-end;
 	align-items: center;
 	height: 100%;
 }
+
+
+
+
+
+
+
+
 nav ul li {
 	height: 100%;
 }
@@ -100,6 +101,9 @@ nav ul li.phoneNum {
 }
 nav ul li.contact {
 	background: #368AC0;
+}
+nav ul li.modelHouse {
+	background: #F89F11;
 }
 nav ul li a {
 	display: inline-block;
