@@ -26,6 +26,7 @@
                         <li class="estate"><a href="#">不動産情報</a></li>
                         <li class="navBox phoneNum"><a href="#">0120-52-8621</a></li>
                         <li class="navBox contact"><a href="#">お問い合わせ<br>資料請求</a></li>
+                        <li class="navBox modelHouse"><a href="#">モデルハウス<br>来場予約</a></li>
                     </ul>
                 </nav>
             </div>
@@ -101,26 +102,9 @@
         class Animal {
             constructor(name, age){
                 this.name = name;
-                this.age = age;
-            }
-            greet() {
-                console.log("こんにちは");
-            }
-            info() {
-                this.greet();
-                console.log(`名前は${this.name}です。`);
-                console.log(`年齢は${this.age}歳です`);
             }
         }
-        class Dog extends Animal {
-            getHumanAge() {
-                return this.age *7;
-            }
-        }
-        const dog = new Dog("レオ", 4);
-        dog.info();
 
-        const humanAge = dog.getHumanAge();
 
     </script>
 
