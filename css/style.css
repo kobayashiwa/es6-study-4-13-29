@@ -83,20 +83,21 @@ nav ul {
 nav ul li {
 	height: 100%;
 }
-
-
-
-
-
-
-
-
-
 nav ul li.estate {
 	border-left: 1px solid #ccc;
 	margin: 0 10px;
 	padding: 0 0 0 10px;
 }
+
+
+
+
+
+
+
+
+
+
 nav ul li.phoneNum {
 	background: #0E304C;
 }
@@ -117,6 +118,9 @@ nav ul li a {
 }
 nav ul li.navBox a {
 	line-height: 1;
+}
+nav ul li.navBox a span {
+	display: inline-block;
 }
 nav ul li a:hover {
 	color: #212121;
