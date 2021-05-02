@@ -71,16 +71,17 @@ ul, li {
 .head-logo img {
 	width: 100%;
 }
-
-
-
-
-
-
 nav {
 	height: 100%;
 	transition: all .5s;
 }
+
+
+
+
+
+
+
 nav ul {
 	justify-content: flex-end;
 	align-items: center;
@@ -96,6 +97,9 @@ nav ul li.estate {
 }
 nav ul li.phoneNum {
 	background: #0E304C;
+}
+nav ul li.contact {
+	background: #368AC0;
 }
 nav ul li a {
 	display: inline-block;
