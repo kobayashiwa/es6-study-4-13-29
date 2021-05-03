@@ -91,7 +91,7 @@ nav ul li.estate {
 nav ul li.navBox a span {
 	display: block;
 	color: #fff;
-	font-size: 12px;
+	font-size: 11px;
 }
 nav ul li.phoneNum {
 	background: #0E304C;
@@ -99,25 +99,15 @@ nav ul li.phoneNum {
 nav ul li.phoneNum .number {
 	font-size: 16px;
 }
+nav ul li.phoneNum .time {
+	font-size: 10px;
+}
 nav ul li.contact {
 	background: #368AC0;
 }
 nav ul li.modelHouse {
 	background: #F89F11;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 nav ul li a {
 	display: inline-block;
 	font-size: 14px;
@@ -127,6 +117,20 @@ nav ul li a {
 	height: 100%;
 	transition: all .5s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav ul li.navBox a {
 	line-height: 1;
 }
