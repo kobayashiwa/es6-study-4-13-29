@@ -121,26 +121,32 @@ nav ul li a {
 nav ul li.navBox a {
 	line-height: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+nav ul li.navBox .navIcon {
+	width: 13px;
+	height: 13px;
+	background-color: #131313;
+}
 nav ul li a:hover {
 	color: #212121;
 	background: #edeff1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .toggle, .toggle-menu {
 	display: none;
 }
