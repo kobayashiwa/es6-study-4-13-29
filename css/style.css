@@ -90,6 +90,7 @@ nav ul li.estate {
 }
 nav ul li.navBox a span {
 	display: block;
+	padding: 4px 0;
 	color: #fff;
 	font-size: 11px;
 }
@@ -117,23 +118,24 @@ nav ul li a {
 	height: 100%;
 	transition: all .5s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 nav ul li.navBox a {
 	line-height: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 nav ul li a:hover {
 	color: #212121;
