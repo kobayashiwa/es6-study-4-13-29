@@ -93,6 +93,7 @@ nav ul li.navBox a span {
 	padding: 4px 0;
 	color: #fff;
 	font-size: 11px;
+	text-align: center;
 }
 nav ul li.phoneNum {
 	background: #0E304C;
@@ -130,26 +131,27 @@ nav ul li a:hover {
 	color: #212121;
 	background: #edeff1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .toggle, .toggle-menu {
 	display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1199px) {
 	.top-header {
