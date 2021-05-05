@@ -153,11 +153,6 @@ nav ul li a:hover {
 
 
 
-	nav ul li a {
-		font-size: 12px;
-		line-height: 68px;
-		padding: 0 8px;
-	}
 	.toggle-menu nav {
 		display: block;
 		padding: 90px 60px;
