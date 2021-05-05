@@ -126,6 +126,7 @@ nav ul li.navBox .navIcon {
 	width: auto;
 	height: 20px;
 	margin: 14px 0 6px 0;
+	text-align: center;
 	background-color: #131313;
 }
 nav ul li.navBox .navIcon img {
@@ -152,11 +153,6 @@ nav ul li a:hover {
 
 
 
-
-	.contact a {
-		padding: 12px 16px;
-		font-size: 12px;
-	}
 	nav {
 		padding-right: 156px;
 	}
