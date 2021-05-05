@@ -90,7 +90,7 @@ nav ul li.estate {
 }
 nav ul li.navBox a span {
 	display: block;
-	padding: 4px 0;
+	padding: 3px 0;
 	color: #fff;
 	font-size: 11px;
 	text-align: center;
@@ -125,6 +125,7 @@ nav ul li.navBox a {
 nav ul li.navBox .navIcon {
 	width: auto;
 	height: 20px;
+	margin: 14px 0 6px 0;
 	background-color: #131313;
 }
 nav ul li a:hover {
@@ -153,16 +154,6 @@ nav ul li a:hover {
 
 
 
-
-
-
-
-
-	
-	.top-header::before{
-		width: calc( 100% - 68px );
-		left: 68px;
-	}
 	.logo-symbol {
 		width: 68px;
 		height: 68px;
