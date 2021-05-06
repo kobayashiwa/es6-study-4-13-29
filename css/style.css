@@ -161,7 +161,6 @@ nav ul li a:hover {
 		width: 44px;
 		height: 44px;
 		background: #378ABF;
-		border-radius: 22px;
 		z-index: 3;
 		appearance: none;
 		cursor: pointer;
@@ -207,10 +206,6 @@ nav ul li a:hover {
 
 
 
-
-	nav {
-		display: none;
-	}
 	  .toggle-menu {
 		  display: block;
 		position: fixed;
