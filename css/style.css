@@ -143,6 +143,10 @@ nav ul li a:hover {
 	.top-header {
 		height: 70px;
 	}
+	.head-logo {
+		top: 13px;
+		left: 20px;
+	}
 	.toggle-menu nav {
 		display: block;
 		padding: 90px 60px;
@@ -150,24 +154,25 @@ nav ul li a:hover {
 	.toggle-menu nav ul {
 		height: auto;
 	}
-
-
-
-
-
-
-
-
-
-
-	
-	
 	.toggle-menu nav ul li {
 		flex-direction: column;
 		width: 100%;
 		padding: 0;
 		margin: 1rem 0;
 	}
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
 	.toggle-menu nav ul li a {
 		text-align: left;
 	}
