@@ -147,6 +147,9 @@ nav ul li a:hover {
 		top: 13px;
 		left: 20px;
 	}
+	.in nav {
+		display: none;
+	}
 	.toggle-menu nav {
 		display: block;
 		padding: 90px 60px;
@@ -160,22 +163,23 @@ nav ul li a:hover {
 		padding: 0;
 		margin: 1rem 0;
 	}
-
-
-
-
-
-
-
-
-
-
-	
-	
-	
 	.toggle-menu nav ul li a {
 		text-align: left;
 	}
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
 	.toggle, .toggle.bisible {
 		top: 21px;
 		opacity: 1;
