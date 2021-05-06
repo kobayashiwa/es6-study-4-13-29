@@ -150,6 +150,25 @@ nav ul li a:hover {
 	.in nav {
 		display: none;
 	}
+	.toggle, .toggle span {
+		display: inline-block;
+	}
+	.toggle {
+		display: block;
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		width: 44px;
+		height: 44px;
+		background: #999;
+		border-radius: 22px;
+		z-index: 3;
+		appearance: none;
+		cursor: pointer;
+	  }
+	
+
+
 	.toggle-menu nav {
 		display: block;
 		padding: 90px 60px;
@@ -178,20 +197,16 @@ nav ul li a:hover {
 
 	
 	
-	
-	
-	.toggle, .toggle.bisible {
-		top: 21px;
-		opacity: 1;
-	}
+
 	.toggle-menu {
 		height: 100%;
 	}
 }
 @media screen and (max-width: 1023px) {
-	.top-header::before{
-		background-image: none;
-	}
+
+
+
+	
 	.logo-symbol {
 		width: 44px;
 		height: 44px;
@@ -204,61 +219,6 @@ nav ul li a:hover {
 	nav {
 		display: none;
 	}
-	.toggle, .toggle span {
-		display: inline-block;
-	}
-	.toggle {
-		display: block;
-		position: fixed;
-		top: 10px;
-		right: 10px;
-		width: 44px;
-		height: 44px;
-		background: #fff;
-		border-radius: 22px;
-		z-index: 3;
-		appearance: none;
-		cursor: pointer;
-	  }
-	  .toggle:focus:not(:focus-visible) {
-		outline: none;
-	  }
-	  .toggle span {
-		position: absolute;
-		width: 22px;
-		height: 1px;
-		background: #434343;
-		border-radius: 4px;
-	  }
-	  .toggle span:nth-of-type(1) {
-		top: 15px;
-		left: 11px;
-		transition: top .3s;
-	  }
-	  .toggle span:nth-of-type(2) {
-		top: 21px;
-		left: 11px;
-		transition: opacity .3s;
-	  }
-	  .toggle span:nth-of-type(3) {
-		bottom: 16px;
-		left: 11px;
-		transition: bottom .3s;
-	  }
-	  .toggle.active span:nth-of-type(1) {
-		top: 21px;
-		transform: rotate(-45deg);
-		transition: top .3s cubic-bezier(.36, -.42, .68, -.56), transform .3s .3s;
-	  }
-	  .toggle.active span:nth-of-type(2) {
-		opacity: 0;
-		transition: opacity .05s .3s;
-	  }
-	  .toggle.active span:nth-of-type(3) {
-		bottom: 21px;
-		transform: rotate(45deg);
-		transition: bottom .3s cubic-bezier(.36, -.42, .68, -.56), transform .3s .3s;
-	  }
 	  .toggle-menu {
 		  display: block;
 		position: fixed;
