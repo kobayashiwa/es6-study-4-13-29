@@ -177,6 +177,10 @@ nav ul li a:hover {
 		border-radius: 4px;
 		transition: .3s .2s;
 	}
+	.toggle span:nth-of-type(1) {
+		top: 0;
+		left: 0;
+	}
 
 
 
