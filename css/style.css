@@ -170,7 +170,7 @@ nav ul li a:hover {
 	}
 	.toggle span {
 		position: absolute;
-		width: 100%;
+		width: 32px;
 		height: 4px;
 		background: #000;
 		border-radius: 4px;
