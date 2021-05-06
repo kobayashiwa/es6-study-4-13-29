@@ -166,6 +166,9 @@ nav ul li a:hover {
 		cursor: pointer;
 		transition: .6s cubic-bezier(.68, -.5, .32, 1.6);
 	}
+	.toggle:focus:not(:focus-visible) {
+		outline: none;
+	}
 
 
 
