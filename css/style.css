@@ -127,7 +127,6 @@ nav ul li.navBox .navIcon {
 	height: 20px;
 	margin: 14px 0 6px 0;
 	text-align: center;
-	background-color: #131313;
 }
 nav ul li.navBox .navIcon img {
 	height: 100%;
@@ -143,20 +142,21 @@ nav ul li a:hover {
 	.top-header {
 		height: 70px;
 	}
-
-
-
-
-
-
-
-
-
-
 	.toggle-menu nav {
 		display: block;
 		padding: 90px 60px;
 	}
+
+
+
+
+
+
+
+
+
+
+	
 	.toggle-menu nav ul {
 		height: auto;
 	}
