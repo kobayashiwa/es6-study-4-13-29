@@ -185,6 +185,10 @@ nav ul li a:hover {
 		top: 20px;
 		left: 0;
 	}
+	.toggle span:nth-of-type(3) {
+		bottom: 0;
+		left: 0;
+	}
 
 
 
