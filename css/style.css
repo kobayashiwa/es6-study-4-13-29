@@ -156,8 +156,8 @@ nav ul li a:hover {
 	.toggle {
 		display: block;
 		position: fixed;
-		top: 10px;
-		right: 10px;
+		top: 0px;
+		right: 0px;
 		width: 44px;
 		height: 44px;
 		background: #378ABF;
@@ -208,9 +208,6 @@ nav ul li a:hover {
 
 
 
-	.logo-typo {
-		display: none;
-	}
 	nav {
 		display: none;
 	}
