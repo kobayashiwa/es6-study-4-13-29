@@ -198,6 +198,9 @@ nav ul li a:hover {
 	.toggle.active span:nth-of-type(2) {
 		transform: translateY(0) rotate(45deg);
 	}
+	.toggle.active span:nth-of-type(3) {
+		opacity: 0;
+	  }
 
 
 
@@ -210,6 +213,8 @@ nav ul li a:hover {
 	}
 	.toggle-menu nav ul {
 		height: auto;
+		max-width: 500px;
+		margin: 0 auto;
 	}
 	.toggle-menu nav ul li {
 		flex-direction: column;
