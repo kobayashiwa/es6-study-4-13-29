@@ -121,6 +121,7 @@ nav ul li a {
 }
 nav ul li.navBox a {
 	line-height: 1;
+	padding: 0 12px;
 }
 nav ul li.navBox .navIcon {
 	width: auto;
@@ -146,6 +147,9 @@ nav ul li a:hover {
 		display: block;
 		padding: 90px 60px;
 	}
+	.toggle-menu nav ul {
+		height: auto;
+	}
 
 
 
@@ -157,9 +161,7 @@ nav ul li a:hover {
 
 
 	
-	.toggle-menu nav ul {
-		height: auto;
-	}
+	
 	.toggle-menu nav ul li {
 		flex-direction: column;
 		width: 100%;
