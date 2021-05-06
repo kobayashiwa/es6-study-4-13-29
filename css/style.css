@@ -156,8 +156,8 @@ nav ul li a:hover {
 	.toggle {
 		display: block;
 		position: fixed;
-		top: 0px;
-		right: 0px;
+		top: 25px;
+		right: 25px;
 		width: 32px;
 		height: 21px;
 		z-index: 3;
