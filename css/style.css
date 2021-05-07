@@ -255,41 +255,14 @@ nav ul li a:hover {
 	.toggle-menu.active nav ul li {
 		margin: 0;
 	}
-
-
-	  
-
-
-	
-
-
-	
-	
-	
-  .toggle-menu.active nav ul li a:hover {
-	  background: none;
-  }
-  .toggle-menu.active nav ul li a {
-	  color: #000;
-	  display: inline-block;
-	  width: 100%;
-	  font-size: 18px;
-  }
-
-
-
-
-
-
-
-
-
-
-	
-	
-
-	.toggle-menu {
-		height: 100%;
+	.toggle-menu.active nav ul li a:hover {
+		background: none;
+	}
+	.toggle-menu.active nav ul li a {
+		color: #000;
+		display: inline-block;
+		width: 100%;
+		font-size: 18px;
 	}
 }
 @media screen and (max-width: 1023px) {	  
