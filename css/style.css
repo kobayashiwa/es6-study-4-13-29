@@ -204,15 +204,6 @@ nav ul li a:hover {
 		display: block;
 		padding: 90px 60px;
 	}
-
-
-	  
-
-
-	
-
-
-	
 	.toggle-menu nav ul {
 		height: auto;
 		max-width: 500px;
@@ -241,6 +232,16 @@ nav ul li a:hover {
     	top: 50%;
     	margin-top: -3px;
 	}
+
+
+	  
+
+
+	
+
+
+	
+	
 	.toggle-menu {
 		display: block;
 	  position: fixed;
