@@ -199,7 +199,11 @@ nav ul li a:hover {
 	}
 	.toggle.active span:nth-of-type(3) {
 		opacity: 0;
-	  }
+	}
+	.toggle-menu nav {
+		display: block;
+		padding: 90px 60px;
+	}
 
 
 	  
@@ -208,10 +212,7 @@ nav ul li a:hover {
 	
 
 
-	.toggle-menu nav {
-		display: block;
-		padding: 90px 60px;
-	}
+	
 	.toggle-menu nav ul {
 		height: auto;
 		max-width: 500px;
@@ -271,9 +272,6 @@ nav ul li a:hover {
 	  display: inline-block;
 	  width: 100%;
 	  font-size: 18px;
-  }
-  .toggle-menu nav {
-	  padding: 80px 16px;
   }
 
 
