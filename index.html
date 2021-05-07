@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>es6-study-4-13-29</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=""/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+    <body>
+
+        <header class="top-header">
+            <div class="head-logo"><img src="img/header-logo.png"></div>
+            <div class="in">
+                <nav>
+                    <ul class="flex">
+                        <li><a href="#">イベント</a></li>
+                        <li><a href="#">お知らせ</a></li>
+                        <li><a href="#">商品ラインナップ</a></li>
+                        <li><a href="#">モデルハウス</a></li>
+                        <li><a href="#">施工例</a></li>
+                        <li><a href="#">会社概要</a></li>
+                        <li class="estate"><a href="#">不動産情報</a></li>
+                        <li class="navBox phoneNum">
+                            <a href="#">
+                                <div class="navIcon"><img src="img/iconPhoneNum.png"></div>
+                                <span class="number">0120-52-8621</span><span class="time">受付時間：10時〜17時迄</span>
+                            </a>
+                        </li>
+                        <li class="navBox contact">
+                            <a href="#">
+                                <div class="navIcon"><img src="img/iconContact.png"></div>
+                                <span>お問い合わせ</span><span>資料請求</span>
+                            </a>
+                        </li>
+                        <li class="navBox modelHouse">
+                            <a href="#">
+                                <div class="navIcon"><img src="img/iconModelHouse.png"></div>
+                                <span>モデルハウス</span><span>来場予約</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="toggle-menu">
+            <nav>
+                <ul class="flex">
+                    <li><a href="#">イベント</a></li>
+                    <li><a href="#">お知らせ</a></li>
+                    <li><a href="#">商品ラインナップ</a></li>
+                    <li><a href="#">モデルハウス</a></li>
+                    <li><a href="#">施工例</a></li>
+                    <li><a href="#">会社概要</a></li>
+                    <li><a href="#">不動産情報</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <section class="p-index__mainVisual">p-index__mainVisual</section>
+            <section class="p-index__event">p-index__event</section>
+            <section class="p-index__news">p-index__news</section>
+            <section class="p-index__brand">p-index__brand</section>
+            <section class="p-index__voice">p-index__voice</section>
+            <section class="footer__own__wrap">footer__own__wrap</section>
+            <section class="p-index__exhibition">p-index__exhibition</section>
+            <section class="p-index__works">p-index__works</section>
+        </main>
+
+        <aside>aside</aside>
+
+        <footer>footer</footer>
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script>
+        $(function() {
+            $('.toggle').click(function() {
+                $(this).toggleClass('active');
+                
+                if ($(this).hasClass('active')) {
+                    $('.toggle-menu').addClass('active');
+                } else {
+                    $('.toggle-menu').removeClass('active');
+                }
+            });
+        });
+    </script>
+
+</html>
+
