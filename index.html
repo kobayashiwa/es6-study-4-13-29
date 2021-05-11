@@ -109,11 +109,13 @@
             greet() {
                 console.log("こんにちは");
             }
-            info() {}
+            info() {
+                this.greet();
+            }
         }
         class Dog extends Animal {}
         const dog = new Dog("レオ", 4);
-        dog.greet();
+        dog.info();
     </script>
 
 </html>
