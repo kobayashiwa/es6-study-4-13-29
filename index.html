@@ -143,9 +143,13 @@
                 console.log("Illustrator でオブジェクトを矢印キーで移動させるとき、意図しない距離で移動します");
             }
         }
-        class Link extends Too {}
-        const too = new Too;
-        too.greet();
+        class Link extends Too {
+            info() {
+                this.greet();
+            }
+        }
+        const link = new Link;
+        link.info();
     </script>
 
 </html>
