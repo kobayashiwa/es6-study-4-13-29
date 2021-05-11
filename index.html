@@ -115,7 +115,11 @@
                 console.log(`年齢は${this.age}歳です`);
             }
         }
-        class Dog extends Animal {}
+        class Dog extends Animal {
+            info() {
+                console.log("あああ");
+            }
+        }
         const dog = new Dog("レオ", 4);
         dog.info();
     </script>
