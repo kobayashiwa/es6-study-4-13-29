@@ -150,6 +150,12 @@
                 console.log(`${this.shoplist}`);
                 console.log(`${this.contact}`);
                 console.log(`公開年：${this.postyear}年`);
+
+                const nextPost = this.getNextPost();
+                console.log(`次回の公開は${nextPost}年です`);
+            }
+            getNextPost() {
+                return this.postyear + 1;
             }
         }
         const link = new Link("サイトマップ", "事業所一覧", "お問い合わせ", 2017);
